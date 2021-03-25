@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
       duration: Duration(milliseconds: 250),
       decoration: BoxDecoration(
           color: Colors.grey[200],
-          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
+          borderRadius: BorderRadius.circular(isDrawerOpen ? 10 : 0.0)),
       child: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: Icon(Icons.menu),
                             onPressed: () {
                               setState(() {
-                                xOffset = 230;
+                                xOffset = 285;
                                 yOffset = 150;
                                 scaleFactor = 0.6;
                                 isDrawerOpen = true;
