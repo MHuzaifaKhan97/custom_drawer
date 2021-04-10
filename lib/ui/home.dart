@@ -55,7 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             icon: Icon(Icons.menu),
                             onPressed: () {
                               setState(() {
-                                xOffset = 285;
+                                xOffset =
+                                    MediaQuery.of(context).size.width * 0.9;
                                 yOffset = 150;
                                 scaleFactor = 0.6;
                                 isDrawerOpen = true;
